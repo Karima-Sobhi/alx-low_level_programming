@@ -9,7 +9,8 @@ int main(void)
 {
 	char ch = 'a';
 	int n = 26;
-	while(n--)
+
+	while (n--)
 	{
 		putchar(ch++);
 	}
