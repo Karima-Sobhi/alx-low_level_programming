@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char ch1 = 'a' , ch2 = 'A';
+	char ch1 = 'a', ch2 = 'A';
 	int n = 26;
 
 	while (n--)
