@@ -12,6 +12,7 @@ void times_table(void)
 	while (tables <= 9)
 	{
 		int i;
+
 		for (i = 0; i <= 9; i++)
 		{
 			n = tables * i;
@@ -25,6 +26,7 @@ void times_table(void)
 			if (i != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
