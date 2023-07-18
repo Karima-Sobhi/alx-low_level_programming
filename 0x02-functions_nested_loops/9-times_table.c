@@ -7,13 +7,28 @@
 
 void times_table(void)
 {
-	int table9 = 0, n = 0;
+	int tables = 0, n = 0;
 
-	while (table9 < 9)
+	while (tables <= 9)
 	{
-		n = table9 * 9;
-		_putchar(n + '0');
-		table9++;
+		int i;
+		for (i = 0; i <= 9; i++)
+		{
+			n = tables * i;
+			if (n > 10)
+			{
+				_putchar(n / 10 + '0');
+				_putchar(n % 10 + '0');
+			}
+			else
+				_putchar(n + '0');
+			if (i != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		tables++;
+		_putchar('\n');
 	}
-
 }
