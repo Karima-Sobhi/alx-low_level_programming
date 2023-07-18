@@ -16,6 +16,11 @@ void times_table(void)
 		for (i = 0; i <= 9; i++)
 		{
 			n = tables * i;
+			if (i == 0)
+			{
+				_putchar(n + '0');
+			}
+
 			if (n > 10)
 			{
 				_putchar(n / 10 + '0');
