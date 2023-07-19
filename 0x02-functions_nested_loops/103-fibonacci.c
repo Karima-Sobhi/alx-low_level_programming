@@ -20,7 +20,7 @@ int main(void)
 	}
 	for (i = 2; i <= 51; i++)
 	{
-		if ((fib[i] % 2 == 0) || (sum <= 4000000))
+		if ((fib[i] % 2 == 0) && (sum <= 4000000))
 		{
 			sum += fib[i];
 		}
