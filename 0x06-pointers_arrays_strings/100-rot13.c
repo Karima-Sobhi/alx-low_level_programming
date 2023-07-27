@@ -7,6 +7,7 @@
 char *rot13(char *s)
 {
 	int i = 0, j = 0;
+
 	char *s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char *s2 = "NOPQRSTUVWXYZABCDEFGHIJKLM";
 
