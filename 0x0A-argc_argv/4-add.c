@@ -3,31 +3,38 @@
 
 /**
  * main - Print the name of the program
- * @argc: Number of arguments
- * @argv: Values of arguments
+ * @argc: Arguments number
+ * @argv: Value of arguments
  *
  * Return: Always 0 (Success)
  */
 
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	char *c;
+	int total = 0;
+	int k = 0;
+	int v = 0;
 
-	while (--argc)
+	for (k = 1; k < argc; k++)
 	{
+		char *arg = argv[k];
+		int num = 0;
 
-		for (c = argv[argc]; *c; c++)
+		for (v = 0; arg[v] != '\0'; v++)
 		{
-			if (*c < '0' || *c > '9')
+			if (arg[v] < '0' || arg[v] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum += atoi(argv[argc]);
+			num = num * 10 + (arg[v] - '0');
 		}
 
+		if (num > 0)
+		{
+			total += num;
+		}
 	}
-	printf("%d\n", sum);
+	printf("%d\n", total);
 	return (0);
 }
