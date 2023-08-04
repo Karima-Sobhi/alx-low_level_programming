@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -7,7 +8,7 @@
  * Return: Always 0 (Sucsees)
  */
 
-void main(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
 	(void)argc;
 
