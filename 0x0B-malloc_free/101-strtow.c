@@ -36,7 +36,7 @@ char **strtow(char *str)
 	char **w;
 	int n, i = 0, j, wc = 0, k, a;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 	n = wCount(str);
 	if (n == 1)
